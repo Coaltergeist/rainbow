@@ -27,16 +27,59 @@
       <app-navigation></app-navigation> -->
       <div class="section">
           <div class="container">
-              <div class="row">
+                <div class="tim-title">
+                    <h3 style="text-align: left;">Example Profile</h3>
+                </div>
+
+                <div class="nav-tabs-navigation">
+                    <div class="nav-tabs-wrapper">
+                        <ngb-tabset [justify]="'center'">
+                            <ngb-tab title="Picture">
+                                <ng-template ngbTabContent>
+                                    <img src="assets/img/family.jpg" style="padding-top: 1%; padding-bottom: 1%;">
+                                    </ng-template>
+                            </ngb-tab>
+                            <ngb-tab title="Biography">
+                                <ng-template ngbTabContent>
+                                    <div class="content-center">
+                                        <div class="row">
+                                            <div class="col">
+                                                <p style="text-align: right;">Name:</p>
+                                            </div>
+                                            <div class="col">
+                                                <p style="text-align: left;">Anonymous and family</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <p style="text-align: right;">Biography:</p>
+                                            </div>
+                                            <div class="col">
+                                                <p style="text-align: left;">Anonymous was born in a small village. He was still a child when he was raided by soldiers. Foreign soldiers. Torn from his elders, he was made to speak their language. With each new post, his masters changed along with the words they made him speak. With each change, he changed, too. His thoughts, personality, how he saw right and wrong. Words can kill. He is a devout Christian and is currently raising a family with his beloved wife.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </ng-template>
+                            </ngb-tab>
+                            <ngb-tab title="Contact">
+                                <ng-template ngbTabContent>
+                                    <button _ngcontent-c3="" class="btn btn-outline-danger btn-round" ngbpopover="Here will be contact info for the person/family." placement="right" popovertitle="Popover on right" type="button"> Contact via H.E.I. </button>
+                                    <button _ngcontent-c3="" class="btn btn-outline-danger btn-round" ngbpopover="Here will be contact info for the person/family." placement="right" popovertitle="Popover on right" type="button"> Contact via Email </button>                         
+                                </ng-template>
+                            </ngb-tab>
+                        </ngb-tabset>
+                    </div>
+                </div>
+              <!-- <div class="row">
                   <div class="col-md-6">
                       <div class="tim-title">
                           <h3>Progress Bar</h3>
                           <br/>
                       </div>
-                      <!-- <ngb-progressbar type="success" [value]="25">25</ngb-progressbar><br>
+                      <ngb-progressbar type="success" [value]="25">25</ngb-progressbar><br>
                       <ngb-progressbar type="info" [value]="50">Copying file <b>2 of 4</b>...</ngb-progressbar><br>
                       <ngb-progressbar type="warning" [value]="75" [striped]="true" [animated]="true"><i>50%</i></ngb-progressbar><br>
-                      <ngb-progressbar type="danger" [value]="100" [striped]="true">Completed!</ngb-progressbar> -->
+                      <ngb-progressbar type="danger" [value]="100" [striped]="true">Completed!</ngb-progressbar>
 
                   </div>
                   <div class="col-md-6">
@@ -44,9 +87,9 @@
                           <h3>Pagination</h3>
                           <br/>
                       </div>
-                      <!-- <ngb-pagination [collectionSize]="70" [(page)]="page" aria-label="Default pagination"></ngb-pagination>
+                      <ngb-pagination [collectionSize]="70" [(page)]="page" aria-label="Default pagination"></ngb-pagination>
                       <br/>
-                      <ngb-pagination [collectionSize]="100" [(page)]="page1" [maxSize]="5" [rotate]="true"></ngb-pagination> -->
+                      <ngb-pagination [collectionSize]="100" [(page)]="page1" [maxSize]="5" [rotate]="true"></ngb-pagination>
                   </div>
               </div>
               <br/>
@@ -84,14 +127,14 @@
                       <div class="tim-title">
                           <h3>Labels</h3>
                       </div>
-                      <!-- <span class="label label-default">Default</span>
+                      <span class="label label-default">Default</span>
                       <span class="label label-primary">Primary</span>
                       <span class="label label-info">Info</span>
                       <span class="label label-success">Success</span>
                       <span class="label label-warning">Warning</span>
-                      <span class="label label-danger">Danger</span> -->
+                      <span class="label label-danger">Danger</span>
                   </div>
-              </div>
+              </div> -->
           </div>
       </div>
       <!-- <div class="section section-notifications" id="notifications">
@@ -256,19 +299,19 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 ml-auto mr-auto text-center">
-                        <h2 class="title">What should I put here</h2>
-                        <p class="description">I don't know</p>
+                        <h2 class="title">Login and registration</h2>
+                        <!-- <p class="description">I don't know</p> -->
                     </div>
                 </div>
             </div>
         </div>
-        <!-- <div class="section section-image section-login" style="background-image: url('assets/img/login-image.jpg');">
+        <div class="section section-image section-login" style="background-image: url('assets/img/login-image.jpg');">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 col-md-6 col-sm-12 ml-auto mr-auto">
                         <div class="card card-register">
                             <h3 class="title">Welcome</h3>
-                            <div class="social-line text-center">
+                            <!-- <div class="social-line text-center">
                                 <a href="#pablo" class="btn btn-neutral btn-facebook btn-just-icon">
                                     <i class="fa fa-facebook-square"></i>
                                 </a>
@@ -278,7 +321,7 @@
                                 <a href="#pablo" class="btn btn-neutral btn-twitter btn-just-icon">
                                     <i class="fa fa-twitter"></i>
                                 </a>
-                            </div>
+                            </div> -->
                             <form class="register-form">
                                 <label>Email</label>
                                 <div class="input-group form-group-no-border" [ngClass]="{'input-group-focus':focus===true}">
@@ -306,13 +349,10 @@
                                 <a href="#" class="btn btn-link btn-danger">Forgot password?</a>
                             </div>
                         </div>
-                        <div class="col text-center" routerLinkActive="active">
-                            <a [routerLink]="['/signup']" class="btn btn-outline-neutral btn-round btn-lg">View Register Page</a>
-                        </div>
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
         <!-- <div class="section section-dark">
             <div class="container">
                 <div class="row example-page">
@@ -334,18 +374,18 @@
         </div> -->
         <div class="section">
             <div class="container text-center">
-                <div class="row">
+                <!-- <div class="row">
                     <div class="col-md-8 ml-auto mr-auto text-center">
                         <h2 class="title">Here</h2>
                         <p class="description">Information here</p>
                     </div>
                 </div>
                 <div class="row">
-                    <!-- <div class="col-md-6 download-area ml-auto mr-auto">
+                    <div class="col-md-6 download-area ml-auto mr-auto">
                         <a href="https://www.creative-tim.com/product/paper-kit-2" class="btn btn-warning btn-round">Download free HTML</a>
                         <a href="https://www.creative-tim.com/product/paper-kit-2-angular" class="btn btn-danger btn-round">Download free Angular</a>
-                    </div> -->
-                </div>
+                    </div>
+                </div> -->
                 <!-- <div class="row justify-content-md-center sharing-area text-center">
                     <div class="text-center col-md-12 col-lg-8">
                         <h3>Thank you for supporting us!</h3>
